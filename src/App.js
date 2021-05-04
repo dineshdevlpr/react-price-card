@@ -128,7 +128,9 @@ function App() {
 
 }
   ]
-
+  let buttonClicked = () => {
+    alert("Button Clicked")
+  }
   return (
     <>
     <section class="pricing py-5">
@@ -136,7 +138,7 @@ function App() {
         <div class="row">
       {
         priceData.map((obj) =>{
-          return <Card data = {obj}></Card>
+          return <Card data = {obj} handleButtonClick={buttonClicked} ></Card>
         })
       }
       </div>

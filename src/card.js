@@ -1,4 +1,7 @@
 export default function Card(props) {
+  let localButton = () => {
+    props.handleButtonClick()
+  }
   return (
     <div className="col-lg-4">
       <div className="card mb-5 mb-lg-0">
@@ -23,7 +26,7 @@ export default function Card(props) {
             })
           }
           </ul>
-          <a href="#" className="btn btn-block btn-primary text-uppercase">
+          <a href="#" className="btn btn-block btn-primary text-uppercase" onClick={localButton} >
             Button
           </a>
         </div>
