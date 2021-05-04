@@ -26,7 +26,7 @@ export default function Card(props) {
             })
           }
           </ul>
-          <a href="#" className="btn btn-block btn-primary text-uppercase" onClick={localButton} >
+          <a className="btn btn-block btn-primary text-uppercase" onClick={localButton} >
             Button
           </a>
         </div>
